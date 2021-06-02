@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 16px;
+}
+
+.header {
+   background-image: url(/img/apples.jpg);
+   background-repeat: no-repeat;
+   height: 100vh;
+   background-size: cover;
+
+
+   .top__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 70px;
+
+      .logo {
+         color: white;
+         font-size: 1.5rem;
+         letter-spacing: 2px;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding-top: 30px;
+      }
+
+      .navbar {
+         display: flex;
+         justify-content: space-between;
+         width: 40%;
+
+         a {
+            color: white;
+            font-size: 1.6rem;
+            text-decoration: none;
+            padding: 30px 15px;
+            margin-top: 40px;
+            transition: 0.3s ease; 
+
+            &:hover {
+               color: rgb(194, 166, 166);
+               transform: scale(1.2);
+               transition: 0.3s ease;
+            }
+         }
+
+      }
+   }
+   
+   .content__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 350px;
+ 
+      h1 { 
+         font-size: 6rem;
+         color: white;
+         letter-spacing: 3px;
+      }
+
+      p {
+         color: white;
+         font-size: 1.2rem;
+         letter-spacing: 3px;
+         margin-bottom: 250px;
+      }
+
+      button {
+         color :white;
+         background-color: rgba(1, 1, 1, 0.3);
+         border: 1px solid white;
+         height: 60px;
+         font-size: 1.4rem;
+         width: 15%;
+         transition: 0.3s ease;
+                  
+
+         &:hover {
+            background-color: rgba(1, 1, 1, 0.6);
+            transition: 0.3s ease;
+         }
+      }
+   }
+}
+.section__text {
+   height: 400px;
+   display: flex;
+   align-items:center;
+   justify-content: space-around;
+   margin: 50px;
+
+   p {
+      font-size: 1.2rem;
+      padding: 40px;
+   }
+}
+
+.section__img {
+   background-color: rgb(247, 238, 238);
+   padding: 50px 50px 60px 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   h2 {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 400;
+      padding: 40px 0;
+   }
+
+   .content-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      img{
+         width: 75%;
+         padding: 10px 0;
+      }
+      p {
+         padding: 0 35px;
+      }
+   }
+
+   .content-block:nth-child(1n) {
+      display: flex;
+      flex-direction: row;
+      }
+   .content-block:nth-child(2n) {
+         display: flex;
+         flex-direction: row-reverse;
+         }
+   }
+
+   .subscribe {
+      background-color: rgb(247, 238, 238);
+      height: 250px;
+      width: 100%;
+   
+
+      .subscribe__wrapper {
+         background: white;
+         padding: 40px 0;
+         margin: 0 40px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         p {
+            font-size: 1.6rem;
+            margin-right: 25px;
+            letter-spacing: 2px;
+            margin-left: 10px;
+            
+
+            span {
+               font-size: 1.6rem;
+               font-weight: 700;
+               letter-spacing: 2px;
+            }
+         }
+         input {
+            height: 80px;
+            width: 55%;
+            color: black;
+            font-weight: 700;
+            font-size: 1.2rem;
+            background-color: rgb(247, 238, 238);
+            padding-left: 20px;
+         }
+         
+         button {            
+               color :white;
+               background-color: rgba(1, 1, 1, 0.6);
+               border: 1px solid white;
+               height: 80px;
+               font-size: 1.2rem;
+               letter-spacing: 1px;
+               width: 150px;
+               transition: 0.3s ease;
+               padding: 0 5px;
+               border-radius: 4px;
+
+               &:hover {
+                  background-color: rgba(1, 1, 1, 0.3);
+                  transition: 0.3s ease;
+                  border-radius: 4px;
+               }
+            }
+         }
+   }
+
+   footer {
+      
+      ul {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         li {
+            list-style: none;
+            padding: 70px 40px;
+
+            h3 {
+               font-size: 1.4rem;
+               padding-bottom: 40px;
+            }
+
+            p {
+               color: rgb(129, 128, 127);
+            }
+
+            a {
+               text-decoration: none;
+               color: rgb(129, 128, 127);
+            }
+            input {
+               height: 50px;
+               width: 40%;
+               color: black;
+               background-color: rgb(247, 238, 238);
+               padding-left: 20px;
+            }
+            
+            button {            
+                  color :white;
+                  background-color: rgba(1, 1, 1, 0.6);
+                  border: 1px solid white;
+                  height: 50px;
+                  border-radius: 4px;
+                  letter-spacing: 1px;
+                  width: 100px;
+                  transition: 0.3s ease;
+                  padding: 0 5px;
+   
+                  &:hover {
+                     background-color: rgba(1, 1, 1, 0.3);
+                     transition: 0.3s ease;
+                     border-radius: 4px;
+            }
+         }
+      }
+   }
+
+   .footer__links {
+
+      span {
+         font-size: 1.2rem;
+         color: black;
+      }
+
+      nav {
+         display: flex;
+         justify-content: flex-end;
+         padding: 10px 50px 30px 0;
+
+            a {
+               color: rgba(0, 0, 0, 0.5);
+               font-size: 1.6rem;
+               text-decoration: none;
+               padding: 0 15px;
+               margin-top: 10px;
+               transition: 0.3s ease; 
+   
+               &:hover {
+                  color: rgba(0, 0, 0, 1);
+                  transform: scale(1.2);
+                  transition: 0.3s ease;
+               }
+            }
+         }
+      }
+   }
